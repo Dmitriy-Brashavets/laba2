@@ -29,7 +29,7 @@ int main()
 {
 	setlocale(LC_ALL, "");
 	char str[256];
-	cout << "ведите строку: ";
+	cout << "Введите строку: ";
 	cin.getline(str, 255);
 	findNumber(str);
 	system("pause");
