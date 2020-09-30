@@ -10,16 +10,16 @@ void findNumber(char str[]) {
 	{
 		if (str[i] >= '0' && str[i] <= '9')
 			number++;
-		if (str[i] == ' ')
+		if (str[i + 1] == ' ' || str[i + 1] == '\0')
 		{
-			endWord = i;
+			endWord = i + 1;
 			if (number == 1)
 			{
 				for (int j = startWord; j < endWord; j++)
 					cout << str[j];
 				cout << endl;
 			}
-			startWord = i + 1;
+			startWord = endWord + 1;
 			number = 0;
 		}
 	}
