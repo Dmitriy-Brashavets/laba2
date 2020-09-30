@@ -5,7 +5,7 @@ using namespace std;
 void findNumber(char str[]) {
 	int startWord = 0;
 	int endWord = 0;
-	bool number = 0;
+	int number = 0;
 	for (int i = 0; str[i] != '\0'; i++)
 	{
 		if (str[i] >= '0' && str[i] <= '9')
